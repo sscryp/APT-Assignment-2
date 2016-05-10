@@ -19,4 +19,9 @@ void showMenu(){
 
     choice = validateString();
 
+    if(choice == "quit"){
+
+        return;
+    }
+
 }
