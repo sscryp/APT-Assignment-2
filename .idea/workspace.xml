@@ -11,12 +11,16 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="5c5e33d6-e42f-4238-9e3f-70b90a23c41b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook.h" afterPath="$PROJECT_DIR$/addressbook.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook.c" afterPath="$PROJECT_DIR$/addressbook.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers.c" afterPath="$PROJECT_DIR$/helpers.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers.h" afterPath="$PROJECT_DIR$/helpers.h" />
     </list>
+=======
+    <list default="true" id="5c5e33d6-e42f-4238-9e3f-70b90a23c41b" name="Default" comment="" />
+>>>>>>> Stashed changes
     <ignored path="APT Assignment 2.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
