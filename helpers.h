@@ -29,5 +29,6 @@ typedef enum boolean
  * Call this function whenever you detect buffer overflow.
  **/
 void readRestOfLine();
+char * validateString();
 
 #endif

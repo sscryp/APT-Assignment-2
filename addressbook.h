@@ -3,4 +3,6 @@
 
 #include "commands.h"
 
+void showMenu();
+
 #endif
