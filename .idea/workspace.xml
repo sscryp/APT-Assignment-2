@@ -11,16 +11,12 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
     <list default="true" id="5c5e33d6-e42f-4238-9e3f-70b90a23c41b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook.h" afterPath="$PROJECT_DIR$/addressbook.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook.c" afterPath="$PROJECT_DIR$/addressbook.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers.c" afterPath="$PROJECT_DIR$/helpers.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpers.h" afterPath="$PROJECT_DIR$/helpers.h" />
     </list>
-=======
-    <list default="true" id="5c5e33d6-e42f-4238-9e3f-70b90a23c41b" name="Default" comment="" />
->>>>>>> Stashed changes
     <ignored path="APT Assignment 2.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -235,7 +231,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
