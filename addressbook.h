@@ -3,6 +3,8 @@
 
 #include "commands.h"
 
+#define DELIMS ", "
+
 void showMenu();
 
 #endif

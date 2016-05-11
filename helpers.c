@@ -16,7 +16,6 @@ char * validateString(){
     char line[LINE_LEN + EXTRA_SPACES];
     char *end = malloc(strlen(line) + EXTRA_SPACES);
 
-    printf("Please enter your choice:");
     fgets(line, LINE_LEN + EXTRA_SPACES, stdin);
 
     if(line[strlen(line)-1] != '\n'){
