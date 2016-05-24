@@ -2,7 +2,8 @@
 
 TelephoneBookList * createTelephoneBookList()
 {
-    return NULL;
+    TelephoneBookList * list = malloc(sizeof(TelephoneBookList));
+    return list;
 }
 
 void freeTelephoneBookList(TelephoneBookList* list)
@@ -17,12 +18,19 @@ TelephoneBookNode * createTelephoneBookNode()
 
 void freeTelephoneBookNode(TelephoneBookNode * node)
 {
-
+    free(node);
 }
 
 Boolean insert(TelephoneBookList * list, TelephoneBookNode * node)
 {
-    return FALSE;
+    TelephoneBookNode * tempNode;
+    tempNode = list->tail;
+    list->tail = node;
+    list->tail->nextNode = NULL;
+    list->tail->previousNode = tempNode;
+    tempNode->nextNode = node;
+
+    return TRUE;
 }
 
 Boolean forward(TelephoneBookList * list, int forward)

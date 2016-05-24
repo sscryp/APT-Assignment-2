@@ -16,6 +16,7 @@ typedef enum boolean
 
 #define NEW_LINE_SPACE 1
 #define NULL_SPACE 1
+#define BUFFER_LEN 512
 
 /**
  * This is used to compensate for the extra character spaces taken up by
