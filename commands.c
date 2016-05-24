@@ -16,7 +16,7 @@ TelephoneBookList * commandLoad(char * fileName)
 
             }
 
-            else((tok = strtok))
+            else((tok = strtok));
 
 
 
