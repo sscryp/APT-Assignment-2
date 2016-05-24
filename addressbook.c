@@ -4,32 +4,43 @@ int main(int argc, char ** argv)
 {
     char * choice;
     char * tok;
+    int i;
     TelephoneBookList * list = createTelephoneBookList();
     TelephoneBookList * tempList = createTelephoneBookList();
+    TelephoneBookNode * node;
 
     printf("--------------------------------------------------------------------\n");
     printf("Student name: Mert Atakan\n");
     printf("Student number: 3457702\n");
     printf("Advanced Programming Techniques, Assignment Two, Semester 1, 2016\n\n");
-    printf("Enter your command: ");
 
-    if(argv[1] != NULL){
+
+    if(argv[1] != NULL) {
         tempList = commandLoad(argv[1]);
         // TODO Unload list
-        // TODO copy tempList to list
+        /*
+        for (i = 0; i < tempList->size; i++) {
 
+            node = tempList->head;
+            printf("%d", node->id);
+            node = node->nextNode;
 
+        }
+         */
     }
 
+    printf("Enter your command: ");
 
 
-    choice = validateString();
-
+    //choice = validateString();
+/*
     if((tok = strtok(choice," ")) && strcmp(tok, COMMAND_LOAD) == 0)
 
         commandLoad(tok);
 
-    if()
+    if(1==1){
+
+    }
             else {
 
         printf(">Opening the file ");
@@ -39,9 +50,15 @@ int main(int argc, char ** argv)
     }
 
         printf("NAH MATE");
-
+*/
     return EXIT_SUCCESS;
 }
+
+
+
+
+
+
 
 /*void showMenu(){
 

@@ -13,7 +13,9 @@ void freeTelephoneBookList(TelephoneBookList* list)
 
 TelephoneBookNode * createTelephoneBookNode()
 {
-    return NULL;
+
+    TelephoneBookNode * node = malloc(sizeof(TelephoneBookNode));
+    return node;
 }
 
 void freeTelephoneBookNode(TelephoneBookNode * node)
@@ -24,11 +26,24 @@ void freeTelephoneBookNode(TelephoneBookNode * node)
 Boolean insert(TelephoneBookList * list, TelephoneBookNode * node)
 {
     TelephoneBookNode * tempNode;
-    tempNode = list->tail;
-    list->tail = node;
-    list->tail->nextNode = NULL;
-    list->tail->previousNode = tempNode;
-    tempNode->nextNode = node;
+
+    if(list->head == NULL){
+        list->head = node;
+        list->current = node;
+        list->tail = node;
+        node->nextNode = NULL;
+        node->previousNode = NULL;
+    }
+
+    else {
+        tempNode = list->tail;
+        list->tail = node;
+        list->tail->nextNode = NULL;
+        list->tail->previousNode = tempNode;
+        tempNode->nextNode = node;
+    }
+
+    list->size ++;
 
     return TRUE;
 }

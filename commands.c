@@ -3,34 +3,58 @@
 TelephoneBookList * commandLoad(char * fileName)
 {
     TelephoneBookList * list = createTelephoneBookList();
-
-    char buffer[BUFFER_LEN];
+    TelephoneBookNode * node = NULL;
+    char * tok;
+    int id = 0, i;
+    char buffer[512];
+    char deli[3] = ", ";
 
         FILE * fp = fopen(fileName, "r");
 
-        while(fp != NULL || buffer != feof(fp)) {
+        while(fp != NULL && !feof(fp)) {
 
-            fgets(buffer, BUFFER_LEN, fp);
+            fgets(buffer, 512, fp);
+            if(!feof(fp)){
 
-            if(strcmp(buffer[0], "#") == 0){
+                if(buffer[0] == '#'){
 
+                }
+
+                else {
+                    printf("%s", buffer);
+                    node = createTelephoneBookNode();
+                    /* unitl here */
+
+                    tok = strtok(buffer, deli);
+
+                    if(tok == NULL){
+                        printf("%s", "warning");
+                    }
+
+                    id = atoi(tok);
+
+                    node->id = id;
+
+                    tok = strtok(NULL, deli);
+
+                    strcpy(node->name, tok);
+
+                    tok = strtok(NULL, deli);
+                    tok[strlen(tok)-1] = 0;
+
+                    strcpy(node->telephone, tok);
+                    insert(list, node);
+                    node = NULL;
+                    tok = NULL;
+                    id = 0;
+                    for(i =0;i < 512; i++){
+                        buffer[i] = '\0';
+                    }
+                }
             }
-
-            else((tok = strtok));
-
-
-
-            printf("%s", buffer);
-
-            if(!1==1){
-                // TODO FREE LIST
-                list = NULL;
-            }
-
         }
-
         fclose(fp);
-
+    printf("%s", "THIS IS FINISHED");
     return list;
 }
 

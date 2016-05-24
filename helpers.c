@@ -12,7 +12,7 @@ void readRestOfLine()
     clearerr(stdin);
 }
 
-char * validateString(){
+/*char * validateString(){
     char line[LINE_LEN + EXTRA_SPACES];
     char *end = malloc(strlen(line) + EXTRA_SPACES);
 
@@ -22,10 +22,8 @@ char * validateString(){
         readRestOfLine();
     }
 
-    line[strlen(line) - 1] = 0;
-    line[strcspn(line, "\n")] = '\0';
     strcpy(end, line);
 
     return end;
 
-}
+}*/
